@@ -10,43 +10,15 @@ import org.testng.annotations.Test;
 
 public class mavenjenkins 
 {
-	//public static void main(String args[])
-	//{
-//		Properties prop = new Properties();
-//		InputStream input = null;
-//
-//		try {
-//
-//			input = new FileInputStream("config.properties");
-//
-//			// load a properties file
-//			prop.load(input);
-//
-//			// get the property value and print it out
-//			System.out.println(prop.getProperty("EDGE_HOME"));
-//		} catch (IOException ex) {
-//			ex.printStackTrace();
-//		} finally {
-//			System.out.println("In finally");
-//		}
-//	}
-
 	WebDriver driver;
 
 	@BeforeMethod
-	public void setbrowser() {
-//		Properties prop = new Properties();
-//		InputStream input = null;
-//		input = new FileInputStream("config.properties");
-//		prop.load(input);
-//		System.setProperty("webdriver.edge.driver", prop.getProperty("EDGE_HOME"));
+	public void setbrowser() 
+	{
 
 		System.setProperty("webdriver.chrome.driver", "C:\\AutomationSoftware\\chromedriver_win32\\chromedriver.exe");
-//		EdgeOptions op = new EdgeOptions();
-//		op.addArguments("headless");
-//		op.addArguments("--remote-debugging-port=9222");
-//		driver = new EdgeDriver(op);
 		driver = new ChromeDriver();
+		
 		driver.get("http://google.com/");
 		driver.manage().window().maximize();
 		System.out.println("Opening browser");
