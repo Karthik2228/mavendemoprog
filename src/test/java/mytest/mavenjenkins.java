@@ -61,7 +61,7 @@ public class mavenjenkins
 	@Test(priority = 1)
 	public void checklogo() {
 		System.out.println("checking logo");
-		Assert.assertTrue(driver.findElement(By.xpath("//img[@alt='Google']")).isDisplayed());
+		Assert.assertTrue(driver.findElement(By.xpath("//img[@alt='Get Vaccinated. Wear a Mask. Save Lives.']")).isDisplayed());
 	}
 
 	@AfterMethod

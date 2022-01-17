@@ -5,6 +5,7 @@
     <classes>
       <class name="mytest.VerifyGoogleTest">
         <methods>
+          <include name="checklogo"/>
           <include name="closebrowser"/>
           <include name="Checktitle"/>
           <include name="setbrowser"/>
