@@ -36,7 +36,7 @@ public class VerifyGoogleTest
 	@Test(priority=1)
 	public void checklogo()
 	{
-		boolean view=driver.findElement(By.xpath("//img[@alt='Google']")).isDisplayed();
+		boolean view=driver.findElement(By.xpath("//img[@alt='Get Vaccinated. Wear a Mask. Save Lives.']")).isDisplayed();
 		Assert.assertTrue(view);
 	}
 	
